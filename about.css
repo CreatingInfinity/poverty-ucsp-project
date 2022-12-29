@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background:rgb(92, 92, 92);
+    border-radius: 40px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background:rgb(66, 66, 66);
+}
+::-webkit-scrollbar-track{
+    background: rgb(214, 214, 214);
+}
+body{
+    position: relative;
+    font-family: 'Prosto One', cursive;
+    background-image: url(white-abstract.webp);
+    display: flex;
+    flex-direction: column;
+}
+.head{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+header nav{
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+}
+header nav a img{
+    padding: 0 40px;
+}
+header nav div{
+    display: flex;
+    height: 100%;
+}
+header nav div a{
+    padding: 0 20px;
+    color: black;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px solid black;
+}
+header nav div a:hover{
+    background: rgb(230, 230, 230);
+}
+.page-about{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 200px;
+    position: relative;
+    height: 69vh;
+    border-bottom: 2px black solid;
+}
+.page-about div{
+    width: 340px;
+    display: flex;
+    height: 320px;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    position: relative;
+    border-radius: 30px;
+    background-color: rgb(159, 255, 167);
+    transition: .3s;
+}
+.hover-notif{
+    background-color: rgb(245, 33, 33);
+    position: absolute;
+    font-size: 10px;
+    top: 0px;
+    right: -50px;
+    padding: 10px 20px;
+    border-radius: 40px;
+}
+.hover-notif-2{
+    background-color: rgb(245, 33, 33);
+    position: absolute;
+    font-size: 10px;
+    top: -30px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    display: none;
+}
+.hover-notif-3{
+    background-color: rgb(245, 33, 33);
+    position: absolute;
+    font-size: 10px;
+    top: -30px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    display: none;
+}
+.page-about div:hover{
+    padding: 50px 70px;
+    width: 400px;
+}
+.page-about div:hover .dev{
+    color:gold;
+    padding: 0 10px;
+    background-color: rgba(0, 0, 0, 0.473);
+}
+.page-about div:hover .rep{
+    color:rgb(209, 13, 13);
+    padding: 0 10px;
+    background-color: rgba(0, 0, 0, 0.281);
+}
+
+.page-about ul{
+    padding: 20px 40px;
+}
+.page-about main p{
+    padding: 5px 50px;
+}
+.dev{
+    color:rgb(0, 0, 0);
+    border-radius: 40px;
+    transition: .2s;
+}
+.rep{
+    color: black;
+    border-radius: 40px;
+    transition: .2s;
+}
+h1{
+    padding: 0 30px;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    background-color: blueviolet;
+    border-radius: 30px;
+    position: absolute;
+    top: 120px;
+    right: 300px;
+    height: 20px;
+    transition: .3s;
+}
+h1:hover{
+    padding: 70px 60px;
+    color: rgb(238, 255, 0);
+}
+.ref{
+    background-color:cadetblue;
+    position: relative;
+    padding: 20px 0;
+}
+.ref div{
+    background-color: rgb(177, 177, 177);
+    position: absolute;
+    top: -50px;
+    right: 45%;
+    padding: 10px 20px;
+    border-radius: 40px;
+    opacity: 0;
+    transition: .2s;
+}
+.ref:hover div{
+    opacity: 1;
+}
+.ref p{
+    font-size: 15px;
+}
